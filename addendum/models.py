@@ -128,7 +128,7 @@ class SnippetTranslation(models.Model):
     Additional text copies of the original snippet for use with the specified
     language.
     """
-    snippet = models.ForeignKey(Snippet, related_name="translations")
+    snippet = models.ForeignKey(Snippet, related_name="translations", on_delete=models.CASCADE)
     language = models.CharField(max_length=5, choices=settings.LANGUAGES)
     text = models.TextField()
 
