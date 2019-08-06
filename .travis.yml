@@ -6,9 +6,11 @@ env:
   - TOX_ENV=py27-django15
   - TOX_ENV=py27-django16
   - TOX_ENV=py27-django17
+  - TOX_ENV=py27-django111
   - TOX_ENV=py33-django15
   - TOX_ENV=py33-django16
   - TOX_ENV=py33-django17
+  - TOX_ENV=py36-django20
 install:
   - pip install tox
 script:
